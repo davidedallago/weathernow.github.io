@@ -1,0 +1,484 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-Light-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-LightItalic-webfont.woff') format('woff');
+  font-style: italic;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-Bold-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* Scroll Bar - Width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Scroll Bar - Track */
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+/* Scroll Bar - Handle */
+::-webkit-scrollbar-thumb {
+  background: #333;
+}
+
+/* Scroll Bar - Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #222;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 1);
+  background-image: url("../images/mountains_bg.jpg");
+}
+
+.firstsection {
+  height: 35vh;
+  display: flex;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.secondsection {
+  height: 65vh;
+  display: flex;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.inputcontainer {
+  width: 100%;
+  height: 100px;
+}
+
+input {
+  width: 80%;
+  height: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  font-size: 25px;
+  text-align: center;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 20px 20px 8px rgba(0, 0, 0, 0.5);
+}
+
+.homecontainer {
+  width: 50vw;
+
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+
+  position: relative;
+}
+
+.hometitle {
+  width: 100%;
+  text-align: center;
+  font-size: 60px;
+  line-height: 100px;
+  letter-spacing: 20px;
+  font-weight: 200;
+  color: #FFF;
+  text-shadow: 20px 20px 8px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+#logocontainer {
+  flex-direction: column;
+  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+
+  margin: auto;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.textcontainer {
+  width: 50vw;
+  padding: 30px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  margin: auto;
+  top: 0;
+  bottom: 0;
+
+  line-height: 80px;
+}
+
+.containertextprop {
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 18px;
+  font-weight: lighter;
+  color: #FFF;
+  text-shadow: 20px 20px 8px rgba(0, 0, 0, 1);
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 3px;
+  line-height: 70px;
+  color: #FFF;
+  text-shadow: 20px 20px 8px rgba(0, 0, 0, 1);
+  z-index: 99;
+}
+
+p,ul {
+  font-size:25px;
+  font-weight: 200;
+  letter-spacing: 5px;
+  color: #FFF;
+  text-shadow: 20px 20px 8px rgba(0, 0, 0, 1);
+  z-index: 98;
+}
+
+.spanText {
+  font-size:35px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  color: #FFF;
+  text-shadow: 20px 20px 8px rgba(0, 0, 0, 0.3);
+  z-index: 98;
+}
+
+.shadowprop {
+  -webkit-filter: drop-shadow( 20px 20px 8px rgba(0, 0, 0, .5)) !important;
+  border-radius: 5px !important;
+}
+
+.fixedbutton {
+  position: fixed;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  z-index: 103;
+  font-size: 20px;
+  padding: 30px;
+}
+
+.fixedbutton:hover {
+  opacity: 0.7;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Facebook */
+.fa-instagram {
+  bottom: 120px;
+  left: 20px;
+  border-radius: 100px;
+  }
+.fa-linkedin {
+  bottom: 20px;
+  left: 20px;
+  border-radius: 100px;
+}
+
+.btn-other:hover {
+  opacity: 0.5;
+}
+
+/*Border Debug
+.section             { border: 3px solid yellow; }
+.homecontainer       { border: 5px solid violet; }
+.hometitle           { border: 2px solid pink; }
+.subelementcontainer { border: 5px solid coral; }
+.singupcontainer     { border: 5px solid brown; }
+.elementgroupprop    { border: 5px solid red; }
+.textcontainer       { border: 5px solid lime; }
+.inputcontainer      { border: 5px solid blue; }
+.containertextprop   { border: 5px solid magenta; }
+.container           { border: 2px solid white; }
+.videoprop           { border: 2px solid green; }
+p                    { border: 2px solid orange; }
+ul                   { border: 2px solid olive; }
+li                   { border: 2px solid white; }
+
+
+/**/
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+
+  nav {
+    margin-top: 0;
+    margin-left: 0;
+    width: 100vw;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .homecontainer {
+    height: 40vh;
+    width: 100vw;
+  }
+
+  .hometitle {
+    font-size: 40px;
+    line-height: 80px;
+    letter-spacing: 5px;
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .elementcontainer {
+    height: 40vh;
+    width: 100vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    .elementgroupprop {
+      display: inline-block;
+    }
+  }
+
+  .elementgroupprop {
+    height: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .textcontainer {
+    height: 80vh;
+    width: 100vw;
+  }
+
+  .containertextprop {
+    font-size: 30px;
+  }
+
+  .videoelementcontainer {
+    display: none;
+  }
+
+  .singupcontainer {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .container {
+    width: 80%;
+    height: 80%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+  }
+
+  .rightalign,
+  .leftalign {
+    text-align: center;
+    width: 90vw;
+  }
+
+  .fixedbutton {
+    padding: 25px;
+  }
+  .fa-instagram {
+    bottom: 10px;
+    left: 90px;
+    border-radius: 50px;
+    }
+  .fa-linkedin {
+    bottom: 10px;
+    left: 10px;
+    border-radius: 50px;
+  }
+
+  #logocontainer,
+  .btn-go-up,
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+  nav {
+    position: static;
+    border-radius: 0px;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100vw;
+    z-index: 100;
+  }
+
+  .rightalign,
+  .leftalign {
+    text-align: center;
+  }
+
+  .section {
+    height: auto;
+    width: 100vw;
+    flex-direction: column;
+  }
+
+  #photosection,
+  #graphicsection,
+  #singupsection {
+    flex-direction: column-reverse;
+  }
+
+  .homecontainer {
+    height: 50vh;
+    width: 100vw;
+  }
+
+  .hometitle {
+    font-size: 60px;
+    line-height: 80px;
+    letter-spacing: 5px;
+    height: 40%;
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .elementcontainer {
+    height: 50vh;
+    width: 100vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    .elementgroupprop {
+      display: inline-block;
+    }
+  }
+
+  .elementgroupprop {
+    height: 50%;
+    margin-left: 20px;
+  }
+
+  .textcontainer {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    width: 100vw;
+  }
+  .containertextprop {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .btn-other {
+    border-radius: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .webdesigntext {
+    line-height: 50px;
+  }
+
+
+  .singupcontainer {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .container {
+    width: 80%;
+    height: 80%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+  }
+
+  .fixedbutton {
+    padding: 25px;
+  }
+  .fa-instagram {
+    bottom: 10px;
+    left: 90px;
+    border-radius: 50px;
+    }
+  .fa-linkedin {
+    bottom: 10px;
+    left: 10px;
+    border-radius: 50px;
+  }
+
+  #logocontainer,
+  .btn-go-up,
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  ::-webkit-scrollbar,
+  nav {
+    display: none;
+  }
+
+  .elementgroupprop {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>SIMPLE WEATHER</title>
+    <link rel='stylesheet' href='css/styles.css'/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <!-- Used this div to set a static background on the site -->
+    <div class="background">
+    </div>
+
+    <!-- First we have the header of the site containing the navbar and the introsection of the site-->
+    <header>
+      <div class="firstsection">
+        <div class='homecontainer'>
+          <h1 class="hometitle">SIMPLE WEATHER</h1>
+        </div>
+        <div class='homecontainer' id="logocontainer">
+          <h1 class="containertextprop leftalign">CITY</h1>
+          <div class="inputcontainer">
+            <input class="search" placeholder="Write the city here">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="secondsection" id="photosection">
+      <div class='textcontainer'>
+          <h1 class="containertextprop">INFO</h1>
+          <div>
+            <ul>
+              <li>City: <span class="spanText" id="location_name"></span></li>
+              <li>Temprature: <span class="spanText" id="location_temp"></span> °C</li>
+              <li>Max Temprature: <span class="spanText" id="location_temp_max"></span> °C</li>
+              <li>Min Temprature: <span class="spanText" id="location_temp_min"></span> °C</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+
+    <!-- That's the "go to the start" button on the right-bottom side -->
+    <a href="https://www.instagram.com/davide.dallago/" class="fixedbutton fa fa-instagram" target="_blank"></a>
+    <a href="https://www.linkedin.com/in/davide-dal-lago-b96873166/" class="fixedbutton fa fa-linkedin" target="_blank"></a>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
+
+<!------------------------------------------>
+<!--                                      -->
+<!--      DAVIDE DAL LAGO 28/05/2020      -->
+<!--                                      -->
+<!------------------------------------------>
